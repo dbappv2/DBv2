@@ -1,0 +1,15 @@
+{
+    "background_color": "white",
+    "description": "DBv2",
+    "display": "fullscreen",
+    "icons": [
+      {
+        "src": "../logo.png",
+        "sizes": "366x256",
+        "type": "image/png"
+      }
+    ],
+    "name": "DBv2",
+    "short_name": "DBv2",
+    "start_url": "../../index.html"
+  }

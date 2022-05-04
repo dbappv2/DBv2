@@ -1,0 +1,327 @@
+/*  FONTS   */
+@font-face {
+    font-family: "DBHeadLightRegular";
+    font-style: normal;
+	font-weight: 400;
+    src: url("https://dbappv2.github.io/DBv2/src/fonts/dbhlr.woff") format("woff"), url("https://dbappv2.github.io/DBv2/src/fonts/dbhlr.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "DBHeadRegular";
+    font-style: normal;
+	font-weight: 400;
+    src: url("https://dbappv2.github.io/DBv2/src/fonts/dbhr.woff") format("woff"), url("https://dbappv2.github.io/DBv2/src/fonts/dbhr.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "DBSansRegular";
+    font-style: normal;
+	font-weight: 400;
+    src: url("https://dbappv2.github.io/DBv2/src/fonts/dbsr.woff") format("woff"), url("https://dbappv2.github.io/DBv2/src/fonts/dbsr.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "DBSansBold";
+    font-style: normal;
+	font-weight: 400;
+    src: url("https://dbappv2.github.io/DBv2/src/fonts/dbsb.woff") format("woff"), url("https://dbappv2.github.io/DBv2/src/fonts/dbsb.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RobotoRegular";
+    font-style: normal;
+	font-weight: 400;
+    src: url("https://dbappv2.github.io/DBv2/src/fonts/robtreg.woff") format("woff"), url("https://dbappv2.github.io/DBv2/src/fonts/robtreg.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RobotoBold";
+    font-style: normal;
+	font-weight: 400;
+    src: url("https://dbappv2.github.io/DBv2/src/fonts/robtbld.woff") format("woff"), url("https://dbappv2.github.io/DBv2/src/fonts/robtbld.ttf") format("truetype");
+}
+
+
+/*  ANIMATION   */
+@keyframes nahsh_anim {
+    0% {left: 36px;}
+    50% {left: 620px;}
+    100% {left: 36px;}
+}
+
+@keyframes twominutes_anim {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*  HEADER   */
+html, body {
+    color: #000000;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    width: 1080px;
+    height: 3844px;
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 38px;
+}
+.header {
+    z-index: 1;
+    background-color: #FFFFFF;
+    font-family: "DBSansRegular";
+    font-weight: 500;
+    position: fixed;
+    margin-top: -58px;
+    top: 10px;
+    margin-bottom: -120px;
+}
+#handy_ticket {
+    background-color: #FFFFFF;
+    font-family: "DBSansBold";
+    color: #000000;
+    font-size: 42px;
+}
+#header_gradient1 {
+    height: 32px;
+    width: 1080px;
+    background: linear-gradient(180deg, rgb(219, 219, 219), transparent);
+}
+#header_date {
+    position: relative;
+    color: #808080;
+    font-size: 38px;
+    margin-left: 18px;
+}
+#header_order {
+    color: #808080;
+    font-size: 38px;
+    margin-left: 18px;
+    position: relative;
+    top: 6px;
+}
+#header_ticket {
+    font-weight: bold;
+    color: #000000;
+    position: absolute;
+    left: 256px;
+}
+#header_location {
+    font-weight: bold;
+    color: #000000;
+    position: absolute;
+    top: 272px;
+    left: 256px;
+}
+#header_gradient2 {
+    position: relative;
+    top: 14px;
+    height: 8px;
+    width: 1080px;
+    background: linear-gradient(0deg, rgb(208, 208, 208), transparent);
+}
+#nahsh_svg  {
+    z-index: 1;
+    position: relative;
+    top: -16px;
+    left: 20px;
+    animation-name: nahsh_anim;
+    animation-duration: 6s;
+    animation-timing-function: cubic-bezier(0.35, 0.1, 0.65, 1.1);
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    
+}
+#twominutes {
+    font-size: 40px;
+    position: absolute;
+    right: 16px;
+    margin-top: 0px;
+    margin-right: 20px;
+
+    border: 1px solid #000000;
+    border-radius: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    animation-name: twominutes_anim;
+    animation-duration: 2s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform: scale(0.9);
+}
+#qr {
+    margin-left: 72px;
+    top: 447px;
+    position: absolute;
+}
+#qr_mid {
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 465px;
+    top: 843px;
+}
+.main {
+    position: absolute;
+    top: 1384px;
+    margin-left: 64px;
+    margin-right: -20px;
+    padding: -20px;
+}
+#block1_heading {
+    font-family: "RobotoBold", sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+}
+
+#verifier_block {
+    border: 0px solid #000000;
+    position: relative;
+    left: 12px;
+    top: 200px;
+    width: 920px;
+    height: 500px;
+}
+#verifier_text_top {
+    color: #CACACA;
+    position: relative;
+    font-family: monospace;
+    top: 46px;
+    left: 20px;
+}
+#verifier_text_top_1 {
+    position: absolute;
+    left: 120px;
+    font-size: 160px;
+}
+#verifier_text_top_2 {
+    color: #909090;
+    position: absolute;
+    left: 220px;
+    font-size: 180px;
+    top: -20px;
+}
+#verifier_text_top_3 {
+    position: absolute;
+    left: 340px;
+    font-size: 160px;
+}
+#verifier_text_top_4 {
+    position: absolute;
+    left: 450px;
+    font-size: 160px;
+}
+#verifier_text_top_5 {
+    color: #909090;
+    position: absolute;
+    left: 550px;
+    font-size: 180px;
+    top: -20px;
+}
+#verifier_text_top_6 {
+    position: absolute;
+    left: 670px;
+    font-size: 160px;
+}
+
+#verifier_text_bottom {
+    color: #EAEAEA;
+    position: relative;
+    font-family: monospace;
+    top: 240px;
+    left: 20px;
+}
+#verifier_text_bottom_1 {
+    position: absolute;
+    left: 120px;
+    top: -124px;
+    font-size: 160px;
+    transform: rotateX(180deg);
+}
+#verifier_text_bottom_2 {
+    color: #CACACA;
+    position: absolute;
+    left: 220px;
+    top: -130px;
+    font-size: 180px;
+    transform: rotateX(180deg);
+}
+#verifier_text_bottom_3 {
+    position: absolute;
+    left: 340px;
+    top: -124px;
+    font-size: 160px;
+    transform: rotateX(180deg);
+}
+#verifier_text_bottom_4 {
+    position: absolute;
+    left: 450px;
+    top: -124px;
+    font-size: 160px;
+    transform: rotateX(180deg);
+}
+#verifier_text_bottom_5 {
+    color: #CACACA;
+    position: absolute;
+    left: 550px;
+    top: -130px;
+    font-size: 180px;
+    transform: rotateX(180deg);
+}
+#verifier_text_bottom_6 {
+    position: absolute;
+    left: 670px;
+    top: -124px;
+    font-size: 160px;
+    transform: rotateX(180deg);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #FFFFFF;
+    margin-top: 22px;
+}
+#footer_button1 {
+    background-color: #f10119;
+    border: 1px solid #f10119;
+    color: #FFFFFF;
+    font-family: "DBSansBold";
+    width: 810px;
+    height: 108px;
+    font-size: 38px;
+    margin-left: 64px;
+    margin-bottom: 32px;
+    margin-top: -20px;
+    border-radius: 16px;
+}
+#footer_button2 {
+    background-color: transparent;
+    border: 1px solid #000000;
+    font-family: "Arial";
+    font-weight: bold;
+    width: 116px;
+    height: 108px;
+    font-size: 38px;
+    margin-bottom: 32px;
+    margin-top: -20px;
+    border-radius: 16px;
+}
+#footer_gradient {
+    position: relative;
+    top: -6px;
+    height: 8px;
+    width: 1080px;
+    background: linear-gradient(0deg, rgb(208, 208, 208), transparent);
+}
+#footer_br {
+    position: relative;
+    bottom: -20px;
+}
+#nahsh_bottom{
+    position: absolute;
+    left: 200px;
+    top: 2124px;
+}
